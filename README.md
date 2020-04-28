@@ -45,3 +45,21 @@ Using a combination of macOS settings and the script, it's possible to use all t
 - `Fn + F9` doesn't work right now (stop media key) -- why is that?
 
 - Windows lock button doesn't seem to do anything on macOS Catalina.
+
+## KBParadise V60 Type R Polestar (ANSI)
+
+### Requirements
+
+- Swap Option and Command, so that the Windows key maps to Option, and Alt maps to Command. To do that, open the "System Preferences" app, then open "Keyboard", then open `Modifier Keys...`, select the keyboard in the drop-down box, then swap the keys in the other drop-down boxes.
+
+### Usage
+
+```
+./KBP-V60-Mini-US.sh
+```
+
+### Notes
+
+- Switch input source using `Ctrl + Space` (brings up menu) or `Ctrl + Option (Windows) + Space` to cycle through them.
+
+- The right Application key (context menu key) is mapped to the Grave (Backtick) / Tilde. Shift+Application gives you a Tilde. This is easier than the FN+Shift+Escape combination supported by the keyboard out of the box.
