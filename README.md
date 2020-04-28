@@ -40,7 +40,7 @@ Using a combination of macOS settings and the script, it's possible to use all t
 
 - `Home/End/etc.` keys don't work.
 
-- How to have this applied during Mac startup? (Currently it's lost across restarts.)
+- How to have this applied during Mac startup? (Currently it's lost across restarts. And sometimes on long sleeps -- or perhaps when you unplug the keyboard? Yes, when you unplug the keyboard.)
 
 - `Fn + F9` doesn't work right now (stop media key) -- why is that?
 

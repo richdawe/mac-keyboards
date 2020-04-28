@@ -6,8 +6,9 @@
 #  1 (0x01) = Generic desktop page
 # 12 (0x0c) = Consumer page
 
-# hidutil list for keyboard:
-#
+# HID devices for the keyboard:
+
+# % hidutil list | grep -E '(Services:|VendorID|Devices|Corsair K65)'
 # Services:
 # VendorID ProductID LocationID         UsagePage Usage RegistryID  Transport Class                         Product                            UserClass               Built-In 
 # 0x1b1c   0x1b07    0x14110000         1         6     0x1000007aa USB       AppleUserHIDEventService      Corsair K65 Gaming Keyboard        AppleUserHIDEventDriver (null)   
@@ -18,8 +19,10 @@
 # 0x1b1c   0x1b07    0x14110000         1         6     0x100000707 USB       AppleUserHIDDevice       Corsair K65 Gaming Keyboard         AppleUserUSBHostHIDDevice 0        
 # 0x1b1c   0x1b07    0x14110000         12        1     0x100000719 USB       AppleUserHIDDevice       Corsair K65 Gaming Keyboard         AppleUserUSBHostHIDDevice 0        
 # 0x1b1c   0x1b07    0x14110000         1         6     0x100000724 USB       AppleUserHIDDevice       Corsair K65 Gaming Keyboard         AppleUserUSBHostHIDDevice 0        
+
 # Default mappings (none):
-#
+
+# % hidutil property --matching '{"ProductID":0x1b07,"VendorID":0x1b1c}' --get "UserKeyMapping"
 # RegistryID  Key                   Value
 # 1000007aa   UserKeyMapping   (null)
 # 100000783   UserKeyMapping   (null)
