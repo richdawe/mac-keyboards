@@ -1,4 +1,5 @@
 # mac-keyboards
+
 Scripts for Keyboards for macOS
 
 ## Introduction
@@ -18,6 +19,7 @@ The USB HID key usage IDs can be found in section 10 "Keyboard/Keypad Page (0x07
 ## Keyboards
 
  * Corsair K65 Keyboard (ISO UK)
+ * HS60 ISO v2 or v3 from Mechboards UK (ISO UK)
  * KBParadise V60 Type R Polestar (ANSI)
 
 ## Corsair K65 Keyboard (ISO UK)
@@ -64,6 +66,24 @@ Using a combination of macOS settings and the script, it's possible to use all t
 - `Fn + F9` doesn't work right now (stop media key) -- why is that?
 
 - Windows lock button doesn't seem to do anything on macOS Catalina.
+
+## HS60 v2 or v3 ISO
+
+### Usage
+
+```bash
+./HS60-V2-UK.sh
+```
+
+### Notes
+
+- Switch input source using `Ctrl + Space` (brings up menu) or `Ctrl + Option (Windows) + Space` to cycle through them.
+
+- The right Application key (context menu key) is mapped to the Windows key, which means it's effectively the Option key.
+
+### Known Problems
+
+- The `Command + \` shortcut for 1Password doesn't work. It seems like that's mapped at a lower level than the mappings set up by the script. Instead, use `Command + #` on the keyboard. (Note `Command` = `Alt` on the actual keys.)
 
 ## KBParadise V60 Type R Polestar (ANSI)
 
